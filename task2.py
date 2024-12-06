@@ -19,3 +19,14 @@ The reciprocal of 3 is 0.3333333333333333
 Enter a number: 4
 The reciprocal of 4 is 0.25
 """
+
+x=input("Enter a number:")
+
+try:
+    x=int(x)
+    reciprocal=1/x
+    reciprocal=float(reciprocal)
+    print(f"The reciprocal of {x} is {reciprocal}") 
+
+except Exception as e:
+    print("There was an error. Please try again\n")

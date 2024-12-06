@@ -9,5 +9,8 @@
 # or display an error message if they enter in something else.
 
 number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+try:
+    number = int(number)
+    print(number)
+except Exception as e:
+    print("There was an error. Please try again\n")
